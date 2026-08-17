@@ -18,7 +18,7 @@ The role description names the core inputs directly — consumer demand, price e
 
 Under the assumptions I used:
 
-- **Premium** is the least price-elastic of the three (-0.30). Its base already selects for higher WTP — 4K, multiple screens — so a price increase loses relatively few subscribers and the take-rate gain dominates. It's the cleanest lever to pull first.
+- **Premium** is the least price-elastic of the three (-0.30). Its base already selects for higher WTP — 4K, multiple screens — so a price increase loses relatively few subscribers and the take-rate gain dominates. It's the cleanest lever to pull first — with one caveat below.
 - **Standard** sits in the middle (-0.55) but carries the more important signal in the trend data: it's the only tier losing subscribers quarter over quarter, most likely to members trading down to Ads or up to Premium. That's not a pricing problem to solve with a price increase — raising price on a tier that's already leaking share just accelerates the leak. I'd hold it flat and treat the erosion as the thing to diagnose first.
 - **Standard with Ads** is the most elastic (-0.95) and growing fastest in raw subscribers. That combination says the tier is still doing its job as a low-friction entry point; a price increase now would blunt the one lever that's working. The better play is protecting the growth curve and revisiting price once the base and its ad-monetization mix are more mature.
 
@@ -26,9 +26,11 @@ Under the assumptions I used:
 
 The elasticity coefficients are the whole model — they're not measured (no conjoint study, no historical price-test data behind them), they're informed assumptions. I'd flag the Standard elasticity as the one most worth pressure-testing first: at -0.55 it's a genuine toss-up on some price moves, and if the real number is closer to Ads-tier elasticity, "hold flat" becomes "cut price to stop the bleed" instead. That's the kind of assumption I'd want a real willingness-to-pay study to replace before this went anywhere near a rate card.
 
+The elasticity model also isn't the whole picture. I laid Netflix's three prices against six competitor services (Disney+, Max, Hulu, Prime Video, Apple TV+, Peacock) and Premium already prices above every one of them on an ad-free/base basis — it's the category ceiling, not just a strong position within it. The elasticity number says "raise it," but elasticity alone can't see a competitive repositioning risk that a member-perception survey would catch. I'd treat "raise Premium" as directionally right but size-uncertain — worth testing at a smaller increment than the model's demand curve alone would suggest, specifically because there's no competitor price point above it to anchor against.
+
 ### The ask
 
-Move Premium price up first and watch the churn-risk flag stays clear at the tested level. Leave Standard untouched until we understand why it's the only tier losing share. Leave Ads-tier pricing alone this cycle and let the growth curve keep compounding.
+Move Premium price up first, but start smaller than the elasticity curve alone implies given it's already priced above the entire competitive set — and watch the churn-risk flag stays clear at the tested level. Leave Standard untouched until we understand why it's the only tier losing share. Leave Ads-tier pricing alone this cycle and let the growth curve keep compounding.
 
 ---
 

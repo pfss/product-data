@@ -51,6 +51,14 @@ CREATE TABLE model_constants (
     value REAL NOT NULL,
     note TEXT NOT NULL
 );
+
+CREATE TABLE competitors (
+    competitor_id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    ad_tier_price_usd REAL,
+    adfree_price_usd REAL,
+    notes TEXT NOT NULL
+);
 """)
 
 plans = [
@@ -95,6 +103,20 @@ constants = [
     ("wtp_value_note", 1.0, "WTP percentiles are illustrative survey-style estimates, not measured conjoint data"),
 ]
 cur.executemany("INSERT INTO model_constants VALUES (?,?,?)", constants)
+
+# US monthly list prices, rounded to informed public-market estimates as of this
+# writing — not scraped live pricing, and not all plans are directly comparable
+# (bundles, ad-load, resolution caps vary). Ad-free column uses each service's
+# lowest ad-free/no-ads tier so it's a like-for-like floor, not their top tier.
+competitors = [
+    (1, "Disney+", 9.99, 15.99, "Ad-free tier now bundled toward Disney+/Hulu combo pricing in practice"),
+    (2, "Max", 9.99, 16.99, "Ad-free 'Standard' tier; Max also sells a pricier 4K 'Ultimate' tier not shown here"),
+    (3, "Hulu", 9.99, 18.99, "Ad-free tier price converged upward with Netflix Standard over the last two cycles"),
+    (4, "Prime Video", 8.99, 11.99, "Ads-included is the Prime Video default; ad-free is a +$3 add-on, not a separate signup"),
+    (5, "Apple TV+", None, 9.99, "No ad-supported tier exists; single price point only"),
+    (6, "Peacock", 7.99, 13.99, "Cheapest ad-tier entry point in the set"),
+]
+cur.executemany("INSERT INTO competitors VALUES (?,?,?,?,?)", competitors)
 
 conn.commit()
 conn.close()

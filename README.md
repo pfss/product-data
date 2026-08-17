@@ -2,11 +2,11 @@
 
 A database-backed, interactive capital allocation model — built as a work sample for a Product Finance & Strategy role. Compares Games, Live, and Podcasts as content-format investments using unit economics built from scratch (no established benchmark), with a live scenario engine and six quarters of trend data.
 
-**[Live demo →](#)** *(add your deployed URL here once live)*
+**[Live demo →](https://product-data-repo.vercel.app)**
 
 ## Other work samples in this repo
 
-- **[`pricing-strategy-manager/`](pricing-strategy-manager/)** — a price-elasticity and willingness-to-pay model built for the *Pricing Strategy Manager* role. Same self-contained SQL.js-backed dashboard pattern as this one, applied to plan-tier pricing instead of content-format investment.
+- **[`pricing-strategy-manager/`](pricing-strategy-manager/)** ([live demo](https://pricing-strategy-manager.vercel.app)) — a price-elasticity, willingness-to-pay, and competitive pricing model built for the *Pricing Strategy Manager* role. Same self-contained SQL.js-backed dashboard pattern as this one, applied to plan-tier pricing instead of content-format investment.
 
 ## What's in here
 
