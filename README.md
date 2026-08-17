@@ -4,6 +4,10 @@ A database-backed, interactive capital allocation model — built as a work samp
 
 **[Live demo →](#)** *(add your deployed URL here once live)*
 
+## Other work samples in this repo
+
+- **[`pricing-strategy-manager/`](pricing-strategy-manager/)** — a price-elasticity and willingness-to-pay model built for the *Pricing Strategy Manager* role. Same self-contained SQL.js-backed dashboard pattern as this one, applied to plan-tier pricing instead of content-format investment.
+
 ## What's in here
 
 - `index.html` — the full dashboard. Single self-contained file: loads an embedded SQLite database via [sql.js](https://github.com/sql-js/sql.js) (SQLite compiled to WebAssembly) and runs real SQL queries client-side to power the trend chart and scenario model. No server, no build step.
